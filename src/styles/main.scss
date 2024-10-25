@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// FONT AND COLOR
+$font-prociono: "Prociono", serif;
+$font-brand: "LXGW WenKai Mono TC", monospace;
+
+$putih: white;
+$biru-tua: #111220;
+
+// DEFAULT
+header {
+  position: fixed;
+  width: 100%;
+  background-color: $biru-tua;
+
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  img {
+    transform: scaleX(-1);
+    width: 10%;
+  }
+
+  h1 {
+    font-family: $font-brand;
+    color: $putih;
+    font-size: 1.5rem;
+  }
+}
+
+span {
+  color: $biru-tua;
+  -webkit-text-stroke: $putih 0.01px;
+}
+
+body {
+  font-family: $font-prociono;
+}
+
+footer {
+  background-color: $biru-tua;
+
+  text-align: center;
+
+  h3 {
+    color: $putih;
+
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+// SKIP TO CONTENT STYLE
+.skip-link {
+  font-family: $font-brand;
+
+  position: absolute !important;
+  height: 40px;
+  width: 60px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  color: red;
+}
+
+.skip-link:focus {
+  position: unset !important;
+}
+
+// NAVIGATION STYLE
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 10px;
+
+  transform: translate(550px, 0);
+  transition: transform 0.3s ease-in-out;
+  background-color: $biru-tua;
+
+  a {
+    text-decoration: none;
+    color: $putih;
+
+    padding: 15px 5px;
+  }
+
+  a:hover {
+    color: $biru-tua;
+    background-color: $putih;
+    border-radius: 5px;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    list-style: none;
+    gap: 10px;
+  }
+
+  .nav-burger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .active {
+    top: 0;
+  }
+
+  .link-aktif {
+    position: relative;
+  }
+
+  .link-aktif::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: $biru-tua;
+
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  .link-aktif:hover::after {
+    width: 70%;
+  }
+}
+
+.nav-menu.open {
+  transform: translate(0, 0);
+}
+
+.ri-menu-fill {
+  color: $putih;
+}
+
+// MAIN
+.container {
+  position: relative;
+  padding-top: 3rem;
+  width: 100%;
+  background-color: $biru-tua;
+
+  .hero-element {
+    position: relative;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .explore {
+    background-color: $putih;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1rem;
+
+    padding-top: 1rem;
+
+    .list-resto {
+      background-color: $biru-tua;
+      padding: 1.2rem;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+
+      padding: 2rem 0.5rem;
+
+      .item-resto {
+        border: $putih solid 2px;
+        border-radius: 16px;
+
+        .img {
+          img {
+            width: 100%;
+            display: block;
+
+            border-radius: 16px 16px 0 0;
+          }
+        }
+
+        .desc {
+          padding: 0.8rem;
+          color: $putih;
+
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+
+          h3 {
+            font-size: 1rem;
+          }
+
+          p {
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+
+  .more {
+    text-align: center;
+
+    h2 {
+      background-color: $putih;
+      padding: 0.5rem;
+
+      color: $biru-tua;
+      font-size: 1.5rem;
+    }
+
+    p {
+      padding: 1rem;
+
+      font-size: 1rem;
+      color: $putih;
+    }
+  }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 425px) {
+  .nav-menu {
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    flex-direction: column;
+    background-color: $biru-tua;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    img {
+      width: 35px;
+    }
+
+    .nav-menu {
+      transform: translate(200px, 0);
+      padding: 1rem 2rem;
+      background-color: $biru-tua;
+
+      .nav-list {
+        flex-direction: row;
+      }
+    }
+    .nav-burger {
+      transform: translate(100px, 0);
+    }
+  }
+
+  .more {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    .nav-menu {
+      transform: translate(350px, 0);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    .nav-menu {
+      transform: translate(500px, 0);
+    }
+  }
+
+  main {
+    .img-hero {
+      min-width: 1000px;
+    }
+  }
+}
