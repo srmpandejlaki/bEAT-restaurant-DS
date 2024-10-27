@@ -1,0 +1,51 @@
+$biru-tua: #111220;
+
+// RESPONSIVE
+@media screen and (max-width: 425px) {
+  .nav-menu {
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    flex-direction: column;
+    background-color: $biru-tua;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    img {
+      width: 35px;
+    }
+
+    .nav-menu {
+      transform: translate(0, 0);
+      padding: 0.5rem;
+      background-color: $biru-tua;
+
+      .nav-list {
+        flex-direction: row;
+      }
+    }
+    .nav-burger {
+      display: none;
+    }
+  }
+
+  .more {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    .img-hero {
+      min-width: 1000px;
+    }
+  }
+}

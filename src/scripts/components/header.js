@@ -17,10 +17,10 @@ class Header extends HTMLElement {
         <div class="nav-menu" id="nav-menu">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="index.html" class="linkk link-aktif">Home</a>
+              <a href="#/home" class="linkk link-aktif">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="linkk">Favorite</a>
+              <a href="#/favorite" class="linkk">Favorite</a>
             </li>
             <li class="nav-item">
               <a href="https://github.com/srmpandejlaki" class="linkk">About Us</a>

@@ -7,8 +7,7 @@ class Explore extends HTMLElement {
     this.innerHTML = `
           <section class="explore">
           <h2>~ Explore Restaurant ~</h2>
-          <div class="list-resto">
-          </div>
+          <div class="list-resto"></div>
         </section>
         `;
   }
