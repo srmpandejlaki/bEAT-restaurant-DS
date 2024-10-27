@@ -10,10 +10,14 @@ class Header extends HTMLElement {
           <h1>b<span>EAT</span></h1>
           <img src="./images/grizzly.png" alt="gambar karakter Grizzly" />
         </div>
+        <!-- toggle button -->
+        <button class="nav-burger" id="nav-burger">
+          <i class="ri-menu-fill"></i>
+        </button>
         <div class="nav-menu" id="nav-menu">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="#" class="linkk link-aktif">Home</a>
+              <a href="index.html" class="linkk link-aktif">Home</a>
             </li>
             <li class="nav-item">
               <a href="#" class="linkk">Favorite</a>
@@ -22,10 +26,6 @@ class Header extends HTMLElement {
               <a href="https://github.com/srmpandejlaki" class="linkk">About Us</a>
             </li>
           </ul>
-        </div>
-        <!-- toggle button -->
-        <div class="nav-burger" id="nav-burger">
-          <i class="ri-menu-fill"></i>
         </div>
       </nav>
     `;

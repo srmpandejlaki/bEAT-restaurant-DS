@@ -95,10 +95,11 @@ nav {
   background-color: $biru-tua;
 
   a {
-    text-decoration: none;
     color: $putih;
+    text-decoration: none;
 
-    padding: 15px 5px;
+    display: flex;
+    align-items: center;
   }
 
   a:hover {
@@ -146,8 +147,21 @@ nav {
   }
 }
 
+a,
+button {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+button {
+  background-color: $biru-tua;
+}
+
 .nav-menu.open {
   transform: translate(0, 0);
+
+  margin-top: 0.5rem;
 }
 
 .ri-menu-fill {
@@ -266,8 +280,8 @@ nav {
     }
 
     .nav-menu {
-      transform: translate(200px, 0);
-      padding: 1rem 2rem;
+      transform: translate(0, 0);
+      padding: 0.5rem;
       background-color: $biru-tua;
 
       .nav-list {
@@ -275,7 +289,7 @@ nav {
       }
     }
     .nav-burger {
-      transform: translate(100px, 0);
+      display: none;
     }
   }
 
@@ -287,17 +301,17 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
-  header {
-    .nav-menu {
-      transform: translate(350px, 0);
-    }
-  }
+  // header {
+  //   .nav-menu {
+  //     transform: translate(350px, 0);
+  //   }
+  // }
 }
 
 @media screen and (min-width: 1200px) {
   header {
     .nav-menu {
-      transform: translate(500px, 0);
+      // transform: translate(500px, 0);
     }
   }
 

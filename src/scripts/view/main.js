@@ -13,9 +13,9 @@ async function main() {
 
   function createResto({ pictureId, name, description, city, rating }) {
     return `
-    <article class="item-resto">
+    <article tabindex="0" class="item-resto">
         <div class="img">
-            <img src="${pictureId}" alt="" />
+            <img src="${pictureId}" alt="gambar suasana resto" />
         </div>
         <div class="desc">
           <h3>${name}</h3>
