@@ -1,15 +1,23 @@
+import favoriteRestoIdb from '../../data/favorite-resto-idb';
+import { createRestoItemTemplate } from '../templates/template-creator';
+
 const favorito = {
   async render() {
     return `
-      <h2>Favorite page</h2>
-      <h2>Favorite page</h2>
-      <h2>Favorite page</h2>
-      <h2>Favorite page</h2>
+      <section class="favorite">
+        <h2>Favorite</h2>
+        <div class="resto-list"></div>
+      </section>
     `;
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
+    const favoriteResto = await favoriteRestoIdb.getAllResto();
+    const favoriteContainer = document.querySelector('.resto-list');
+
+    favoriteResto.forEach((resto) => {
+      favoriteContainer.innerHTML += createRestoItemTemplate(resto);
+    });
   },
 };
 

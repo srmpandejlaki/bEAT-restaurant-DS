@@ -42,6 +42,20 @@ $biru-tua: #111220;
   }
 }
 
+@media screen and (min-width: 100px) {
+  main {
+    .details {
+      .h2Detail {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   main {
     .img-hero {

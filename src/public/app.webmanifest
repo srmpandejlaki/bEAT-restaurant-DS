@@ -1,0 +1,60 @@
+{
+  "id": "resto-app-lite-pwa-1",
+  "start_url": "./index.html",
+  "name": "bEAT App Restaurants",
+  "short_name": "bEAT App",
+  "description": "Website restaurant lists",
+  "background_color": "#FFFFFF",
+  "theme_color": "#111220",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./icons/grizzly(1).png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/grizzly(2).png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/grizzly(3).png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/grizzly(4).png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/grizzly(5).png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/grizzly(6).png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/grizzly(7).png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/grizzly(8).png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
