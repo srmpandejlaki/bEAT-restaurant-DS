@@ -5,15 +5,18 @@ const favorito = {
   async render() {
     return `
       <section class="favorite">
-        <h2>Favorite</h2>
-        <div class="resto-list"></div>
+        <div class="h2">
+          <h2>Favorite</h2>
+        </div>
+        <div class="list-resto"></div>
       </section>
     `;
   },
 
   async afterRender() {
     const favoriteResto = await favoriteRestoIdb.getAllResto();
-    const favoriteContainer = document.querySelector('.resto-list');
+    console.log(favoriteResto);
+    const favoriteContainer = document.querySelector('.list-resto');
 
     favoriteResto.forEach((resto) => {
       favoriteContainer.innerHTML += createRestoItemTemplate(resto);

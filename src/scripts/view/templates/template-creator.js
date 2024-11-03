@@ -33,10 +33,10 @@ const createRestoDetailTemplate = (data) => `
         <h3>⭐️: ${data.rating}</h3>
       </div>
       
-      <div class="cttn">
         <div class="desc">
-          <h3>Alamat: ${data.address}</h3>
-          <h3>City: ${data.city}</h3>
+          <h3>Deskripsi</h3>
+          <p>Alamat: ${data.address}</p>
+          <p>City: ${data.city}</p>
           <p>${data.description}</p>
         </div>
         <div class="menu-mkn">
@@ -47,13 +47,38 @@ const createRestoDetailTemplate = (data) => `
           <h3>Menu Minuman</h3>
           <p>${data.drinks}</p>
         </div>
-      </div>
     </article>
-          
+
     <article class="review">
-      <h2>Review</h2>
-    </article>
+        <h2>Review</h2>
+        <div class="boxReview">
+          <form class="formReview glass">
+            <div class="input">
+              <label>Nama</label>
+              <input
+                type="text"
+                name="name"
+              />
+            </div>
+            <div class="input">
+              <label>Review</label>
+              <input
+                type="textarea"
+                name="review"
+              />
+            </div>
+            <button class="saveBtn">Send</button>
+          </form>
+        </div>
+      </article>
   </section>
+`;
+
+const createCustomerReview = (data) => `
+  <div id="customerReview">
+    <p>${data.customerName}<br>${data.customerReview}</p>
+    <p>${data.customerDate}</p>
+  </div>
 `;
 
 const createLikeButtonTemplate = () => `
@@ -71,6 +96,7 @@ const createLikedButtonTemplate = () => `
 export {
   createRestoItemTemplate,
   createRestoDetailTemplate,
+  createCustomerReview,
   createLikeButtonTemplate,
   createLikedButtonTemplate,
 };
