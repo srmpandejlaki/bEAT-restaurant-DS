@@ -40,6 +40,54 @@ $biru-tua: #111220;
       font-size: 1.5rem;
     }
   }
+
+  .details {
+    .h2Detail {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .resto-item {
+      margin: 2rem 6rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    .details {
+      .h2Detail {
+        font-size: 2.3rem;
+        padding: 0.5rem 10rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .resto-item {
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {

@@ -1,8 +1,11 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import daStyle from 'eslint-config-dicodingacademy';
 
 
 export default [
-  {languageOptions: { globals: globals.browser }},
+  daStyle,
+  { files: ['/*.js'], languageOptions: { sourceType: 'commonjs' }, rules: { 'linebreak-style': 'off' } },
+  { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   pluginJs.configs.recommended,
 ];

@@ -97,6 +97,7 @@ nav {
   a {
     color: $putih;
     text-decoration: none;
+    padding: 0 0.2rem;
 
     display: flex;
     align-items: center;
@@ -150,12 +151,13 @@ nav {
 a,
 button {
   display: inline-block;
-  min-width: 44px;
+  min-width: 50px;
   min-height: 44px;
 }
 
 button {
   background-color: $biru-tua;
+  border-radius: 8px;
 }
 
 .nav-menu.open {
@@ -167,6 +169,8 @@ button {
 .ri-menu-fill {
   color: $putih;
 }
+
+// -- DASHBOARD PAGE --
 
 // MAIN
 .container {
@@ -194,48 +198,6 @@ button {
     gap: 1rem;
 
     padding-top: 1rem;
-
-    .list-resto {
-      background-color: $biru-tua;
-      padding: 1.2rem;
-
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 1.5rem;
-
-      padding: 2rem 0.5rem;
-
-      .item-resto {
-        border: $putih solid 2px;
-        border-radius: 16px;
-
-        .img {
-          img {
-            width: 100%;
-            display: block;
-
-            border-radius: 16px 16px 0 0;
-          }
-        }
-
-        .desc {
-          padding: 0.8rem;
-          color: $putih;
-
-          display: flex;
-          flex-direction: column;
-          gap: 0.5rem;
-
-          h3 {
-            font-size: 1rem;
-          }
-
-          p {
-            text-align: justify;
-          }
-        }
-      }
-    }
   }
 
   .more {
@@ -254,6 +216,302 @@ button {
 
       font-size: 1rem;
       color: $putih;
+    }
+  }
+}
+
+// 
+.list-resto {
+  background-color: $biru-tua;
+  padding: 1.2rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+
+  padding: 2rem;
+}
+
+// item-resto
+.item-resto {
+  border: $putih solid 2px;
+  border-radius: 16px;
+
+  .descItem {
+    justify-items: space-between;
+  }
+
+
+  .img {
+    position: relative;
+
+    img {
+      width: 100%;
+      display: block;
+
+      border-radius: 16px 16px 0 0;
+    }
+
+    .rating {
+      position: absolute;
+      right: 1rem;
+      bottom: 0.5rem;
+
+      color: $putih;
+      background-color: rgba(0, 0, 0, 0.85);
+      border-radius: 4px;
+
+      padding: 0.2rem 0.5rem 0.2rem 0;
+
+      display: flex;
+      align-items: center;
+    }
+}
+
+  .desc {
+    padding: 0.8rem;
+    color: $putih;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+// style like icon
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+// button
+.button {
+  display: flex;
+  justify-content: end;
+
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+
+  color: var(--biru-tua);
+  background-color: var(--putih);
+  text-decoration: none;
+
+  .detailBtn {
+    border-radius: 8px;
+
+    display: flex;
+    align-items: flex-end;
+
+    a {
+      text-decoration: none;
+      color: $putih;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+} 
+
+// DETAIL PAGE
+.details {
+  background-color: $biru-tua;
+  padding-top: 6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  .resto-item {
+    margin: 0.5rem;
+
+    color: $putih;
+
+    .menu-mkn, .menu-mnm, .desc {
+      background-color: $biru-tua;
+      border-radius: 8px;
+
+      padding: 1rem;
+        
+      h3 {
+        color: $biru-tua;
+        background-color: $putih;
+        text-align: center;
+      
+        border-radius: 8px;
+        padding: 0.3rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        padding: 0.5rem 0;
+        text-align: justify;
+      }
+    }
+  }
+
+  .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0.5rem;
+    
+    h3 {
+      display: flex;
+      justify-content: end;
+      padding: 0.5rem;
+      
+      font-size: 1rem;
+      align-self: flex-end;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+      border: 1px solid $putih;
+    }
+  }
+}
+
+.h2Detail, .review h2 {
+  margin: 0 3rem;
+  padding: 0.5rem 3rem;
+  text-align: center;
+    
+  color: $biru-tua;
+  background-color: $putih;
+
+  border-radius: 10px;
+}
+
+
+// review
+.review {
+  background-color: $biru-tua;
+  width: 70%;
+  
+  h2 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .formReview {
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+
+    color: $putih;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .input {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      input {
+        min-height: 50px;
+      }
+    }
+
+    .saveBtn {
+      color: $putih;
+      margin-top: 1rem;
+
+      font-size: 1.3rem;
+      font-family: $font-prociono;
+    }
+
+  }
+
+
+  .glass {
+    background: linear-gradient(135deg, #111220);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 10px;
+ }
+}
+
+.reviewer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+
+  padding: 1rem;
+  background-color: $biru-tua;
+
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: $biru-tua;
+    gap: 0.5rem;
+      
+    color: $biru-tua;
+    background-color: $putih;
+    border-radius: 8px;
+    
+    padding: 0.7rem;
+  
+    .info {
+      padding: 0.5rem 0;
+    }
+  
+    .date {
+      display: flex;
+      justify-content: flex-end;
+    } 
+  }
+}
+
+// favorite page
+.favorite {
+  background-color: $biru-tua;
+  min-height: 100vh;
+
+  .h2 {
+    padding-top: 4rem;
+
+    h2 {
+      color: $biru-tua;
+      background-color: $putih;
+      border-radius: 8px;
+
+      text-align: center;
+      padding: 0.5rem;
+      margin: 1rem 2rem;
     }
   }
 }

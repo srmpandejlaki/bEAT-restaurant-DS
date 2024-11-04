@@ -1,3 +1,6 @@
+import restoAppSource from '../../data/restoApp-source';
+import { createRestoItemTemplate } from '../templates/template-creator';
+
 const dashboard = {
   async render() {
     return `
@@ -28,7 +31,12 @@ const dashboard = {
   },
 
   async afterRender() {
-    //
+    const dashboardResto = await restoAppSource.Dashboard();
+    const itemRestoContainer = document.querySelector('#list-resto');
+
+    dashboardResto.forEach((resto) => {
+      itemRestoContainer.innerHTML += createRestoItemTemplate(resto);
+    });
   },
 };
 
