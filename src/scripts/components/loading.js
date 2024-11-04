@@ -22,8 +22,8 @@ class Loading extends HTMLElement {
   _updateStyle() {
     this._style.textContent = `
       :host {
-        margin: 4rem;
-        color: #111220;
+        margin-top: 4rem;
+        color: #ffff;
       }
     `;
   }

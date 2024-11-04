@@ -87,6 +87,36 @@ module.exports = {
             cacheName: 'therestodb-large-image-api',
           },
         },
+        {
+          urlPattern: ({ url }) =>
+            url.href.startsWith(
+              'https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css'
+            ),
+          handler: 'StaleWhileRevalidate',
+          options: {
+            cacheName: 'remixicon-font',
+          },
+        },
+        {
+          urlPattern: ({ url }) =>
+            url.href.startsWith(
+              'https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Prociono&display=swap'
+            ),
+          handler: 'StaleWhileRevalidate',
+          options: {
+            cacheName: 'default-font',
+          },
+        },
+        {
+          urlPattern: ({ url }) =>
+            url.href.startsWith(
+              'https://use.fontawesome.com/b070c8f1df.js'
+            ),
+          handler: 'StaleWhileRevalidate',
+          options: {
+            cacheName: 'icon-favorite-detail',
+          },
+        },
       ],
     }),
   ],

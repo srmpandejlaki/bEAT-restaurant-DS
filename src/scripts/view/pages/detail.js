@@ -3,9 +3,6 @@ import UrlParser from '../../routes/url-parser';
 import { createRestoDetailTemplate, createCustomerReview } from '../templates/template-creator';
 import likeButton from '../../utils/button-like-initiator';
 import favoriteRestoIdb from '../../data/favorite-resto-idb';
-import utils from '../../utils/utils';
-
-const loading = document.createElement('loading-o');
 
 const details = {
   async render() {
@@ -17,9 +14,6 @@ const details = {
   },
 
   async afterRender() {
-    utils.emptyElement(detailContainer);
-    detailContainer.append(loading);
-
     const url = UrlParser.parseActiveUrlWithoutCombiner();
 
     const detailResto = await restoAppSource.Detail(url.id);
