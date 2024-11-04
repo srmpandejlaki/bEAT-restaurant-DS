@@ -346,17 +346,6 @@ button {
     justify-content: center;
     align-items: center;
 
-  .h2Detail {
-    margin: 0 3rem;
-    padding: 0.5rem 3rem;
-    text-align: center;
-    
-    color: $biru-tua;
-    background-color: $putih;
-
-    border-radius: 10px;
-  }
-
   .resto-item {
     margin: 0.5rem;
 
@@ -411,21 +400,26 @@ button {
   }
 }
 
+.h2Detail, .review h2 {
+  margin: 0 3rem;
+  padding: 0.5rem 3rem;
+  text-align: center;
+    
+  color: $biru-tua;
+  background-color: $putih;
+
+  border-radius: 10px;
+}
+
+
 // review
 .review {
   background-color: $biru-tua;
   width: 70%;
   
   h2 {
-    color: $putih;
-
-    border: 1px solid $putih;
-    border-radius: 8px;
-
-    text-align: center;
-    padding: 0.5rem 2rem;
-    margin: 0 5rem;
-
+    width: 100%;
+    margin: 0;
   }
 
   .formReview {
