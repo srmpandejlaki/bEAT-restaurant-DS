@@ -1,5 +1,8 @@
 import restoAppSource from '../../data/restoApp-source';
 import { createRestoItemTemplate } from '../templates/template-creator';
+import utils from '../../utils/utils';
+
+const loading = document.createElement('loading-o');
 
 const dashboard = {
   async render() {
@@ -31,6 +34,9 @@ const dashboard = {
   },
 
   async afterRender() {
+    utils.emptyElement(itemRestoContainer);
+    itemRestoContainer.append(loading);
+
     const dashboardResto = await restoAppSource.Dashboard();
     const itemRestoContainer = document.querySelector('#list-resto');
 

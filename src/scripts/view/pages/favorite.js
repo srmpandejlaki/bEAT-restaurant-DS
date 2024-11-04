@@ -1,5 +1,8 @@
 import favoriteRestoIdb from '../../data/favorite-resto-idb';
 import { createRestoItemTemplate } from '../templates/template-creator';
+import utils from '../../utils/utils';
+
+const loading = document.createElement('loading-o');
 
 const favorito = {
   async render() {
@@ -14,8 +17,10 @@ const favorito = {
   },
 
   async afterRender() {
+    utils.emptyElement(favoriteContainer);
+    favoriteContainer.append(loading);
+
     const favoriteResto = await favoriteRestoIdb.getAllResto();
-    console.log(favoriteResto);
     const favoriteContainer = document.querySelector('.list-resto');
 
     favoriteResto.forEach((resto) => {

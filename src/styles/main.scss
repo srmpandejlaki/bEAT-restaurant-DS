@@ -237,6 +237,11 @@ button {
   border: $putih solid 2px;
   border-radius: 16px;
 
+  .descItem {
+    justify-items: space-between;
+  }
+
+
   .img {
     position: relative;
 
@@ -454,27 +459,47 @@ button {
 
   }
 
-  #reviewer {
-    display: grid;
-
-    #customerReview {
-      color: $biru-tua;
-      background-color: $putih;
-      border-radius: 8px;
-  
-      padding: 1rem;
-      margin: 1rem 0;
-    }
-
-  }
 
   .glass {
-  background: linear-gradient(135deg, #111220);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 10px;
+    background: linear-gradient(135deg, #111220);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 10px;
+ }
 }
+
+.reviewer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+
+  padding: 1rem;
+  background-color: $biru-tua;
+
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: $biru-tua;
+    gap: 0.5rem;
+      
+    color: $biru-tua;
+    background-color: $putih;
+    border-radius: 8px;
+    
+    padding: 0.7rem;
+  
+    .info {
+      padding: 0.5rem 0;
+    }
+  
+    .date {
+      display: flex;
+      justify-content: flex-end;
+    } 
+  }
 }
 
 // favorite page

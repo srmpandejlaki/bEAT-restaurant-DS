@@ -10,13 +10,15 @@ const createRestoItemTemplate = (data) => `
         <h3>⭐️: ${data.rating} </h3>
       </div>
     </div>
-    <div class="desc">
-      <h3>${data.name}</h3>
-      <h3>City: ${data.city}</h3>
-      <p>${data.description}</p>
-    </div>
-    <div class="button">
-      <button class="detailBtn"><a href="/#/detail/${data.id}">Detail</a></button>
+    <div class="descItem">
+      <div class="desc">
+        <h3>${data.name}</h3>
+        <h3>City: ${data.city}</h3>
+        <p>${data.description}</p>
+      </div>
+      <div class="button">
+        <button class="detailBtn"><a href="/#/detail/${data.id}">Detail</a></button>
+      </div>
     </div>
   </article>
 `;
@@ -52,12 +54,13 @@ const createRestoDetailTemplate = (data) => `
     <article class="review">
         <h2>Review</h2>
         <div class="boxReview">
-          <form class="formReview glass">
+          <form id="formReview" class="formReview glass">
             <div class="input">
               <label>Nama</label>
               <input
                 type="text"
                 name="name"
+                id="name"
               />
             </div>
             <div class="input">
@@ -65,6 +68,7 @@ const createRestoDetailTemplate = (data) => `
               <input
                 type="textarea"
                 name="review"
+                id="review"
               />
             </div>
             <button class="saveBtn">Send</button>
@@ -75,10 +79,15 @@ const createRestoDetailTemplate = (data) => `
 `;
 
 const createCustomerReview = (data) => `
-  <div id="customerReview">
-    <p>${data.customerName}<br>${data.customerReview}</p>
-    <p>${data.customerDate}</p>
-  </div>
+  <article class="reviews">
+        <div class="info">
+          <p>Name: ${data.name}</p>
+          <p>Review: ${data.review}</p>
+        </div>
+        <div class="date">
+          <p>${data.date}</p>
+        </div>
+  </article>
 `;
 
 const createLikeButtonTemplate = () => `

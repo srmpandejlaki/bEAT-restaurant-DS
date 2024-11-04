@@ -3,22 +3,57 @@ import UrlParser from '../../routes/url-parser';
 import { createRestoDetailTemplate, createCustomerReview } from '../templates/template-creator';
 import likeButton from '../../utils/button-like-initiator';
 import favoriteRestoIdb from '../../data/favorite-resto-idb';
+import utils from '../../utils/utils';
+
+const loading = document.createElement('loading-o');
 
 const details = {
   async render() {
     return `
       <div id="detail"></div>
-      <div id="reviewer"></div>
+      <div id="reviewer" class="reviewer"></div>
       <div id="likeBtn"></div>
     `;
   },
 
   async afterRender() {
+    utils.emptyElement(detailContainer);
+    detailContainer.append(loading);
+
     const url = UrlParser.parseActiveUrlWithoutCombiner();
 
-    const detailResto = await restoAppSource.detail(url.id);
+    const detailResto = await restoAppSource.Detail(url.id);
     const detailContainer = document.querySelector('#detail');
     detailContainer.innerHTML = createRestoDetailTemplate(detailResto);
+
+    // add review
+    const newForm = document.getElementById('formReview');
+    newForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const { id } = detailResto;
+      const name = document.getElementById('name').value;
+      const review = document.getElementById('review').value;
+      const date = new Date().toISOString();
+
+      const newReview = {
+        id,
+        name,
+        review,
+        date,
+      };
+
+      restoAppSource.Reviews(newReview).then(() => {
+        document.location.reload();
+      });
+      newForm.reset();
+    });
+
+    const reviewContainer = document.querySelector('#reviewer');
+    const listReview = detailResto.customerReviews;
+    listReview.forEach((review) => {
+      reviewContainer.innerHTML += createCustomerReview(review);
+    });
 
     likeButton.init({
       likeButton: document.querySelector('#likeBtn'),
@@ -34,14 +69,9 @@ const details = {
         categories: detailResto.categories,
         foods: detailResto.foods,
         drinks: detailResto.drinks,
-        customerName: detailResto.customerName,
-        customerReview: detailResto.customerReview,
-        customerDate: detailResto.customerDate,
+        customerReviews: detailResto.customerReviews,
       },
     });
-
-    const reviewContainer = document.querySelector('#reviewer');
-    reviewContainer.innerHTML += createCustomerReview(detailResto);
   },
 };
 
