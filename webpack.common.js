@@ -110,7 +110,7 @@ module.exports = {
         {
           urlPattern: ({ url }) =>
             url.href.startsWith(
-              'https://use.fontawesome.com/b070c8f1df.js'
+              'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
             ),
           handler: 'StaleWhileRevalidate',
           options: {

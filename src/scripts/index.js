@@ -12,6 +12,12 @@ const app = new AppResto({
   content: document.querySelector('#main'),
 });
 
+const skipLinkElem = document.querySelector('.skip-link');
+skipLinkElem.addEventListener('click', (event) => {
+  event.preventDefault();
+  document.querySelector('#main').focus();
+});
+
 window.addEventListener('hashchange', () => {
   app.renderPage();
 });
