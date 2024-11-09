@@ -81,8 +81,8 @@ const createRestoDetailTemplate = (data) => `
 const createCustomerReview = (data) => `
   <article class="reviews">
         <div class="info">
-          <p>Name: ${data.name}</p>
-          <p>Review: ${data.review}</p>
+          <p class="rev-name">Name: ${data.name}</p>
+          <p class="rev-desc">Review: ${data.review}</p>
         </div>
         <div class="date">
           <p>${data.date}</p>
