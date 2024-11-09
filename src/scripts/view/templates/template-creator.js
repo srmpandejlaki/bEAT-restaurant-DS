@@ -90,13 +90,13 @@ const createCustomerReview = (data) => `
   </article>
 `;
 
-const createLikeButtonTemplate = () => `
+const createLikeRestoButtonTemplate = () => `
   <button aria-label="like this restoBtn" id="likeButton" class="like">
      <i class="fa fa-heart-o" aria-hidden="true"></i>
   </button>
 `;
 
-const createLikedButtonTemplate = () => `
+const createLikedRestoButtonTemplate = () => `
   <button aria-label="unlike this restoBtn" id="likedButton" class="like">
     <i class="fa fa-heart" aria-hidden="true"></i>
   </button>
@@ -106,7 +106,7 @@ export {
   createRestoItemTemplate,
   createRestoDetailTemplate,
   createCustomerReview,
-  createLikeButtonTemplate,
-  createLikedButtonTemplate,
+  createLikeRestoButtonTemplate,
+  createLikedRestoButtonTemplate,
 };
 

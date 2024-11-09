@@ -1,5 +1,5 @@
-import likeButton from '../src/scripts/utils/button-like-initiator';
 import favoriteRestoIdb from '../src/scripts/data/favorite-resto-idb';
+import * as TestFactories from './helpers/testFactories';
 
 describe('Menyukai Resto', () => {
   const addLikeButtonContainer = () => {
@@ -11,35 +11,19 @@ describe('Menyukai Resto', () => {
   });
 
   it('harus menampilkan button like jika resto belum di like sebelumnya', async () => {
-
-    await likeButton.init({
-      likeButton: document.querySelector('#likeBtn'),
-      restos: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithResto({ id:1 });
 
     expect(document.querySelector('[aria-label="like this restoBtn"]')).toBeTruthy();
   });
 
   it('seharusnya tidak menampilkan button unlike jika resto belum di like sebelumnya', async () => {
-    await likeButton.init({
-      likeButton: document.querySelector('#likeBtn'),
-      restos: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithResto({ id:1 });
 
     expect(document.querySelector('[aria-label="unlike this restoBtn"]')).toBeFalsy();
   });
 
   it('harusnya bisa like resto', async () => {
-    await likeButton.init({
-      likeButton: document.querySelector('#likeBtn'),
-      restos: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithResto({ id:1 });
 
     document.querySelector('#likeButton').dispatchEvent(new Event('click'));
 
@@ -52,12 +36,7 @@ describe('Menyukai Resto', () => {
 
   // scenario negatif - resto sudah di like
   it('seharusnya tidak menambahkan resto ketika sudah di like', async () => {
-    await likeButton.init({
-      likeButton: document.querySelector('#likeBtn'),
-      restos: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithResto({ id:1 });
 
     // tambah resto dengan id 1 ke daftar favorite
     await favoriteRestoIdb.putResto({ id:1 });
@@ -71,12 +50,8 @@ describe('Menyukai Resto', () => {
     await favoriteRestoIdb.deleteResto(1);
   });
 
-  // menggunakan metode xit, bukan it, untuk menonaktifkan sebuah test case
-  xit('seharusnya resto tidak bisa ditambah ketika tidak ada id', async () => {
-    await likeButton.init({
-      likeButton: document.querySelector('#likeBtn'),
-      restos: {},
-    });
+  it('seharusnya resto tidak bisa ditambah ketika tidak ada id', async () => {
+    await TestFactories.createLikeButtonPresenterWithResto({});
 
     // simulasi pengguna menekan tombol like resto
     document.querySelector('#likeButton').dispatchEvent(new Event('click'));
