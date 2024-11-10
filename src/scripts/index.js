@@ -6,6 +6,9 @@ import '../scripts/components/importer.js';
 import AppResto from './view/app.js';
 import swRegister from './utils/sw-register.js';
 
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
 const app = new AppResto({
   button: document.querySelector('#nav-burger'),
   drawer: document.querySelector('#nav-menu'),
