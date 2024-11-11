@@ -3,7 +3,7 @@ import CONFIG from '../../globals/config';
 const createRestoItemTemplate = (data) => `
   <article tabindex="0" class="item-resto">
     <div class="img">
-      <img src="${CONFIG.MEDIUM_IMAGE_URL + data.pictureId}" alt="${
+      <img class="lazyload" data-src="${CONFIG.MEDIUM_IMAGE_URL + data.pictureId}" alt="${
   data.name
 }" />
       <div class="rating">

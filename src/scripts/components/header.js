@@ -8,7 +8,6 @@ class Header extends HTMLElement {
           <nav>
         <div class="brand">
           <h1>b<span>EAT</span></h1>
-          <img src="./images/grizzly.png" alt="gambar karakter Grizzly" />
         </div>
         <!-- toggle button -->
         <button class="nav-burger" id="nav-burger">
@@ -23,7 +22,7 @@ class Header extends HTMLElement {
               <a href="#/favorite" class="linkk">Favorite</a>
             </li>
             <li class="nav-item">
-              <a href="https://github.com/srmpandejlaki" class="linkk">About Us</a>
+              <a href="https://github.com/" class="linkk">About Us</a>
             </li>
           </ul>
         </div>

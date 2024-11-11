@@ -6,16 +6,14 @@ const dashboard = {
     return `
           <div class="container">
             <section class="hero-element">
-            <div class="gambar">
              <picture>
                 <source media="(max-width: 600px)" srcset="./images/heros/hero-image_4-small.jpg">
                 <img
-                class="img-hero"
-                src="./images/heros/hero-image_4-large.jpg"
+                class="lazyload"
+                data-src="./images/heros/hero-image_4-large.jpg"
                 alt="gambar hero section"
                 />
               </picture>
-            </div>
             </section>
 
             <explore-component></explore-component>

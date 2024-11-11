@@ -17,10 +17,6 @@ header {
   width: 100%;
   background-color: $biru-tua;
 
-  top: 0;
-  left: 0;
-  z-index: 100;
-
   .brand {
     display: flex;
     align-items: center;
@@ -36,12 +32,16 @@ header {
     font-family: $font-brand;
     color: $putih;
     font-size: 1.5rem;
+
+    font-display: swap;
   }
 }
 
 span {
   color: $biru-tua;
   -webkit-text-stroke: $putih 0.01px;
+
+  font-display: swap;
 }
 
 body {
@@ -168,6 +168,10 @@ button {
 
 .ri-menu-fill {
   color: $putih;
+}
+
+img {
+  min-height: 100%;
 }
 
 // -- DASHBOARD PAGE --
