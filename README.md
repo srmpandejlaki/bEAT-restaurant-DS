@@ -2,7 +2,7 @@
 
 Fitur yang harus ada pada aplikasi: 
 
-App Bar (Navigation Bar)
+#### 1. App Bar (Navigation Bar)
 Syarat:
 <ul>
   <li>Menampilkan nama aplikasi atau brand logo dari aplikasi katalog restoran (tentukan sendiri nama aplikasi atau brand logonya).</li>
@@ -15,7 +15,7 @@ Syarat:
   <li>Terdapat fitur navigation drawer yang berfungsi dengan baik bila diakses pada layar seluler.</li>
 </ul>
 
-Hero Element (Jumbotron Element)
+#### 2. Hero Element (Jumbotron Element)
 Syarat:
 <ul>
   <li>Menampilkan hero element dengan gambar yang sudah ditentukan, silakan pilih salah satu aset yang disediakan di dalam starter proyek, src → public → images → hero. Gambar yang tidak digunakan, bisa Anda hapus.</li>
@@ -26,21 +26,21 @@ Syarat:
   </ul>
 </ul>
 
-Daftar Restoran
+#### 3. Daftar Restoran
 Syarat:
 <ul>
   <li>Menampilkan daftar restoran berdasarkan data yang sudah disediakan di dalam project starter–lokasinya ada di src → public → data → DATA.json. Untuk menampilkannya dapat melalui cara hardcoded–dituliskan dalam HTML secara langsung–atau DOM manipulation menggunakan JavaScript.</li>
   <li>Wajib menampilkan nama, gambar, dan minimal salah satu di antara kota, rating, dan/atau deskripsi pada restoran.</li>
 </ul>
 
-Footer
+#### 4. Footer
 Syarat:
 <ul>
   <li>Terdapat footer yang ditampilkan di bawah halaman.</li>
   <li>Terdapat konten teks bebas sesuai dengan kreatifitas Anda. Misalnya, konten hak cipta yang mencangkup tahun dan nama aplikasi. Contoh: “Copyright © 2020 - Hunger Apps”.</li>
 </ul>
 
-Responsibilitas Tampilan
+#### 5. Responsibilitas Tampilan
 Syarat:
 <ul>
   <li>Tampilan web app harus responsif pada seluruh ukuran layar (mobile - tablet - desktop). Utamakan tampilan mobile terlebih dahulu.</li>
@@ -48,7 +48,7 @@ Syarat:
   <li>Menetapkan ukuran viewport secara dinamis berdasarkan layar device yang digunakan.</li>
 </ul>
 
-Aksesibilitas Website
+#### 6. Aksesibilitas Website
 Syarat:
 <ul>
   <li>Seluruh fungsionalitas website dapat dilakukan dengan menggunakan keyboard. Contohnya mengakses tombol hamburger button, mengakses tautan yang ada, dan lain sebagainya.</li>
