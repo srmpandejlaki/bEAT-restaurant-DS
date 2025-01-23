@@ -63,17 +63,21 @@ Syarat:
   <li>Terdapat konten teks bebas sesuai dengan kreatifitas Anda. Misalnya, konten hak cipta yang mencangkup tahun dan nama aplikasi. Contoh: “Copyright © 2020 - Hunger Apps”.</li>
 </ul>
 
-Responsibilitas Tampilan
+#### 5. Responsibilitas Tampilan
 Syarat:
-Tampilan web app harus responsif pada seluruh ukuran layar (mobile - tablet - desktop). Utamakan tampilan mobile terlebih dahulu.
-Gunakan teknik Grid CSS atau Flexbox dalam menyusun layout. Bila terdapat float, submission Anda akan kami ditolak.
-Menetapkan ukuran viewport secara dinamis berdasarkan layar device yang digunakan.
+<ul>
+  <li>Tampilan web app harus responsif pada seluruh ukuran layar (mobile - tablet - desktop). Utamakan tampilan mobile terlebih dahulu.</li>
+  <li>Gunakan teknik Grid CSS atau Flexbox dalam menyusun layout. Bila terdapat float, submission Anda akan kami ditolak.</li>
+  <li>Menetapkan ukuran viewport secara dinamis berdasarkan layar device yang digunakan.</li>
+</ul>
 
-Aksesibilitas Website
+#### 6. Aksesibilitas Website
 Syarat:
-Seluruh fungsionalitas website dapat dilakukan dengan menggunakan keyboard. Contohnya mengakses tombol hamburger button, mengakses tautan yang ada, dan lain sebagainya.
-Menerapkan teknik Skip to Content untuk melewati focus pada menu navigasi.
-Terdapat alternative teks pada seluruh gambar yang ditampilkan. Bila ada gambar yang tidak memiliki arti apa pun, cukup berikan atribut alt dengan nilai kosong. 
-Dimensi touch target pada elemen yang diinteraksikan dengan touch harus memilliki ukuran elemen minimal 44x44px. Adapun beberapa contoh elemen tersebut meliputi button, anchor, input text, dan textarea.
-Pastikan juga terdapat jarak antar elemen tersebut supaya dimensi touch target tidak menumpuk.
-Menggunakan semantic element dalam menyusun struktur dan landmarking HTML.
+<ul>
+  <li>Seluruh fungsionalitas website dapat dilakukan dengan menggunakan keyboard. Contohnya mengakses tombol hamburger button, mengakses tautan yang ada, dan lain sebagainya.</li>
+  <li>Menerapkan teknik Skip to Content untuk melewati focus pada menu navigasi.</li>
+  <li>Terdapat alternative teks pada seluruh gambar yang ditampilkan. Bila ada gambar yang tidak memiliki arti apa pun, cukup berikan atribut alt dengan nilai kosong.</li>
+  <li>Dimensi touch target pada elemen yang diinteraksikan dengan touch harus memilliki ukuran elemen minimal 44x44px. Adapun beberapa contoh elemen tersebut meliputi button, anchor, input text, dan textarea.</li>
+  <li>Pastikan juga terdapat jarak antar elemen tersebut supaya dimensi touch target tidak menumpuk.</li>
+  <li>Menggunakan semantic element dalam menyusun struktur dan landmarking HTML.</li>
+</ul>
