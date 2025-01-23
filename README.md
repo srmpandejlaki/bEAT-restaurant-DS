@@ -1,44 +1,60 @@
-## Submission: Katalog Restoran
+## Course Menjadi Front-end Web Developer Expert - Dicoding Indonesia <br>Submission: Katalog Restoran
 
 Fitur yang harus ada pada aplikasi: 
 
 App Bar (Navigation Bar)
 Syarat:
-Menampilkan nama aplikasi atau brand logo dari aplikasi katalog restoran (tentukan sendiri nama aplikasi atau brand logonya).
-Terdapat navigation menu:
-Home → mengarah ke root domain.
-Favorite → target URL cukup bernilai “#” (Sebagai placeholder untuk digunakan pada submission selanjutnya).
-About Us → arahkan ke profil LinkedIn/Github/Social Media Anda, atau boleh juga ke personal web/blog.
-Terdapat fitur navigation drawer yang berfungsi dengan baik bila diakses pada layar seluler.
+<ul>
+  <li>Menampilkan nama aplikasi atau brand logo dari aplikasi katalog restoran (tentukan sendiri nama aplikasi atau brand logonya).</li>
+  <li>Terdapat navigation menu:</li>
+  <ul>
+    <li>Home → mengarah ke root domain.</li>
+    <li>Favorite → target URL cukup bernilai “#” (Sebagai placeholder untuk digunakan pada submission selanjutnya).</li>
+    <li>About Us → arahkan ke profil LinkedIn/Github/Social Media Anda, atau boleh juga ke personal web/blog.</li>
+  </ul>
+  <li>Terdapat fitur navigation drawer yang berfungsi dengan baik bila diakses pada layar seluler.</li>
+</ul>
 
 Hero Element (Jumbotron Element)
 Syarat:
-Menampilkan hero element dengan gambar yang sudah ditentukan, silakan pilih salah satu aset yang disediakan di dalam starter proyek, src → public → images → hero. Gambar yang tidak digunakan, bisa Anda hapus.
-Gambar hero element yang ditampilkan haruslah full-width atau memenuhi persyaratan sebagai berikut. 
-Tampilkan minimal dengan width 1000px pada ukuran viewport width >= 1200px.
-Jika ukuran viewport width < 1200px, hero element ditampilkan full-width.
+<ul>
+  <li>Menampilkan hero element dengan gambar yang sudah ditentukan, silakan pilih salah satu aset yang disediakan di dalam starter proyek, src → public → images → hero. Gambar yang tidak digunakan, bisa Anda hapus.</li>
+  <li>Gambar hero element yang ditampilkan haruslah full-width atau memenuhi persyaratan sebagai berikut.</li>
+  <ul>
+    <li>Tampilkan minimal dengan width 1000px pada ukuran viewport width >= 1200px.</li>
+    <li>Jika ukuran viewport width < 1200px, hero element ditampilkan full-width.</li>
+  </ul>
+</ul>
 
 Daftar Restoran
 Syarat:
-Menampilkan daftar restoran berdasarkan data yang sudah disediakan di dalam project starter–lokasinya ada di src → public → data → DATA.json. Untuk menampilkannya dapat melalui cara hardcoded–dituliskan dalam HTML secara langsung–atau DOM manipulation menggunakan JavaScript.
-Wajib menampilkan nama, gambar, dan minimal salah satu di antara kota, rating, dan/atau deskripsi pada restoran.
+<ul>
+  <li>Menampilkan daftar restoran berdasarkan data yang sudah disediakan di dalam project starter–lokasinya ada di src → public → data → DATA.json. Untuk menampilkannya dapat melalui cara hardcoded–dituliskan dalam HTML secara langsung–atau DOM manipulation menggunakan JavaScript.</li>
+  <li>Wajib menampilkan nama, gambar, dan minimal salah satu di antara kota, rating, dan/atau deskripsi pada restoran.</li>
+</ul>
 
 Footer
 Syarat:
-Terdapat footer yang ditampilkan di bawah halaman.
-Terdapat konten teks bebas sesuai dengan kreatifitas Anda. Misalnya, konten hak cipta yang mencangkup tahun dan nama aplikasi. Contoh: “Copyright © 2020 - Hunger Apps”.
+<ul>
+  <li>Terdapat footer yang ditampilkan di bawah halaman.</li>
+  <li>Terdapat konten teks bebas sesuai dengan kreatifitas Anda. Misalnya, konten hak cipta yang mencangkup tahun dan nama aplikasi. Contoh: “Copyright © 2020 - Hunger Apps”.</li>
+</ul>
 
 Responsibilitas Tampilan
 Syarat:
-Tampilan web app harus responsif pada seluruh ukuran layar (mobile - tablet - desktop). Utamakan tampilan mobile terlebih dahulu.
-Gunakan teknik Grid CSS atau Flexbox dalam menyusun layout. Bila terdapat float, submission Anda akan kami ditolak.
-Menetapkan ukuran viewport secara dinamis berdasarkan layar device yang digunakan.
+<ul>
+  <li>Tampilan web app harus responsif pada seluruh ukuran layar (mobile - tablet - desktop). Utamakan tampilan mobile terlebih dahulu.</li>
+  <li>Gunakan teknik Grid CSS atau Flexbox dalam menyusun layout. Bila terdapat float, submission Anda akan kami ditolak.</li>
+  <li>Menetapkan ukuran viewport secara dinamis berdasarkan layar device yang digunakan.</li>
+</ul>
 
 Aksesibilitas Website
 Syarat:
-Seluruh fungsionalitas website dapat dilakukan dengan menggunakan keyboard. Contohnya mengakses tombol hamburger button, mengakses tautan yang ada, dan lain sebagainya.
-Menerapkan teknik Skip to Content untuk melewati focus pada menu navigasi.
-Terdapat alternative teks pada seluruh gambar yang ditampilkan. Bila ada gambar yang tidak memiliki arti apa pun, cukup berikan atribut alt dengan nilai kosong. 
-Dimensi touch target pada elemen yang diinteraksikan dengan touch harus memilliki ukuran elemen minimal 44x44px. Adapun beberapa contoh elemen tersebut meliputi button, anchor, input text, dan textarea.
-Pastikan juga terdapat jarak antar elemen tersebut supaya dimensi touch target tidak menumpuk.
-Menggunakan semantic element dalam menyusun struktur dan landmarking HTML.
+<ul>
+  <li>Seluruh fungsionalitas website dapat dilakukan dengan menggunakan keyboard. Contohnya mengakses tombol hamburger button, mengakses tautan yang ada, dan lain sebagainya.</li>
+  <li>Menerapkan teknik Skip to Content untuk melewati focus pada menu navigasi.</li>
+  <li>Terdapat alternative teks pada seluruh gambar yang ditampilkan. Bila ada gambar yang tidak memiliki arti apa pun, cukup berikan atribut alt dengan nilai kosong. </li>
+  <li>Dimensi touch target pada elemen yang diinteraksikan dengan touch harus memilliki ukuran elemen minimal 44x44px. Adapun beberapa contoh elemen tersebut meliputi button, anchor, input text, dan textarea.</li>
+  <li>Pastikan juga terdapat jarak antar elemen tersebut supaya dimensi touch target tidak menumpuk.</li>
+  <li>Menggunakan semantic element dalam menyusun struktur dan landmarking HTML.</li>
+</ul>
