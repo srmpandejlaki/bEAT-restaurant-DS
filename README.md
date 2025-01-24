@@ -1,5 +1,6 @@
 ## Course Menjadi Front-end Web Developer Expert - Dicoding Indonesia <br>Submission: Katalog Restoran
 
+### Kriteria Wajib
 Fitur yang harus ada pada aplikasi: 
 
 #### 1. App Bar (Navigation Bar)
@@ -58,3 +59,5 @@ Syarat:
   <li>Pastikan juga terdapat jarak antar elemen tersebut supaya dimensi touch target tidak menumpuk.</li>
   <li>Menggunakan semantic element dalam menyusun struktur dan landmarking HTML.</li>
 </ul>
+
+### Kriteria Opsional
