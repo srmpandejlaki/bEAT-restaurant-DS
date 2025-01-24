@@ -60,4 +60,14 @@ Syarat:
   <li>Menggunakan semantic element dalam menyusun struktur dan landmarking HTML.</li>
 </ul>
 
-### Kriteria Opsional
+### Kriteria Opsional / Saran
+
+Menerapkan tampilan aplikasi yang menarik. Berikut adalah beberapa checklist dari saran ini.
+Memiliki pemilihan warna yang pas dengan tema aplikasi (Dalam memilih warna, Anda dapat memanfaatkan tools pemilihan warna seperti colorhunt.co).
+Tata letak elemen yang pas.
+Contoh: Tidak ada konten yang bertumpuk.
+Penggunaan font yang pas dengan tema.
+Penerapan padding, margin yang pas.
+Terdapat konten tambahan yang relevan dengan tema aplikasi atau di luar dari data yang disediakan.
+Menggunakan elemen secara bijak sesuai dengan fungsinya. Contoh: tidak menggunakan button sebagai anchor ataupun sebaliknya.
+Dalam penyusunan CSS, Anda boleh menggunakan CSS preprocessor seperti SASS bila nyaman menggunakannya. Gunakanlah sass-loader untuk memuat berkas sass pada webpack.
