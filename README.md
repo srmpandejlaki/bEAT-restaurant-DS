@@ -61,13 +61,15 @@ Syarat:
 </ul>
 
 ### Kriteria Opsional / Saran
-
-Menerapkan tampilan aplikasi yang menarik. Berikut adalah beberapa checklist dari saran ini.
-Memiliki pemilihan warna yang pas dengan tema aplikasi (Dalam memilih warna, Anda dapat memanfaatkan tools pemilihan warna seperti colorhunt.co).
-Tata letak elemen yang pas.
-Contoh: Tidak ada konten yang bertumpuk.
-Penggunaan font yang pas dengan tema.
-Penerapan padding, margin yang pas.
-Terdapat konten tambahan yang relevan dengan tema aplikasi atau di luar dari data yang disediakan.
-Menggunakan elemen secara bijak sesuai dengan fungsinya. Contoh: tidak menggunakan button sebagai anchor ataupun sebaliknya.
-Dalam penyusunan CSS, Anda boleh menggunakan CSS preprocessor seperti SASS bila nyaman menggunakannya. Gunakanlah sass-loader untuk memuat berkas sass pada webpack.
+<ul>
+  <li>Menerapkan tampilan aplikasi yang menarik. Berikut adalah beberapa checklist dari saran ini.</li>
+  <ul>
+    <li>Memiliki pemilihan warna yang pas dengan tema aplikasi (Dalam memilih warna, Anda dapat memanfaatkan tools pemilihan warna seperti colorhunt.co).</li>
+    <li>Tata letak elemen yang pas.<br>Contoh: Tidak ada konten yang bertumpuk.</li>
+    <li>Penggunaan font yang pas dengan tema.</li>
+    <li>Penerapan padding, margin yang pas.</li>
+  </ul>
+  <li>Terdapat konten tambahan yang relevan dengan tema aplikasi atau di luar dari data yang disediakan.</li>
+  <li>Menggunakan elemen secara bijak sesuai dengan fungsinya. Contoh: tidak menggunakan button sebagai anchor ataupun sebaliknya.</li>
+  <li>Dalam penyusunan CSS, Anda boleh menggunakan CSS preprocessor seperti SASS bila nyaman menggunakannya. Gunakanlah sass-loader untuk memuat berkas sass pada webpack.</li>
+</ul>
